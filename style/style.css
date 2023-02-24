@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Righteous', cursive;
+    src: url(https://fonts.googleapis.com/css2?family=Righteous&display=swap);
+}
+
+:root{
+    --marrom-escuro:#2F2325;
+    --marrom-medio: #63433E;
+    --marrom-claro: #63433E ;
+
+    --fonte-destaque:'Righteous', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+
+}
+header>a{
+
+}
+header>nav{
+
+}
