@@ -1,26 +1,111 @@
-@charset "UTF-8";
-@font-face {
-    font-family: 'Righteous', cursive;
-    src: url(https://fonts.googleapis.com/css2?family=Righteous&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+:root {
+  --marrom-escuro: #2F2325;
+  --marrom-medio: #573B38;
+  --marrom-claro: #8E5D52;
+  --fonte-destaque: 'Righteous', cursive;
+  --fonte-padrao: 'Sarala', sans-serif;
 }
 
-:root{
-    --marrom-escuro:#2F2325;
-    --marrom-medio: #63433E;
-    --marrom-claro: #63433E ;
-
-    --fonte-destaque:'Righteous', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-*{
-    margin: 0;
-    padding: 0;
-}
-header{
 
+body {
+  background-image: linear-gradient(to right, var(--marrom-escuro), var(--marrom-medio), var(--marrom-claro));
+  color: #ecd6c4;
+  font-family: var(--fonte-padrao);
 }
-header>a{
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
 }
-header>nav{
 
+header > nav > a {
+  color: white;
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main {
+  padding: 60px 30px;
+}
+
+#principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+main > section > div > h1 {
+  font-family: var(--fonte-destaque);
+  font-size: 64px;
+  font-weight: 400;
+  color: #fff2e7;
+}
+
+main > section > div > p {
+  font-family: var(--fonte-padrao);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#btn {
+  font-family: var(--fonte-padrao);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  background-color: #ecd6c4;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.349);
+}
+
+#btn:hover {
+  background-color: #a88f7e;
+  color: #ecd6c4;
+}
+
+#info {
+  text-align: center;
+  padding: 48px 0px 10px 0px;
+}
+#linha {
+  width: 260px;
+  margin: auto;
+}
+#info > h2 {
+  font-size: 24px;
+  font-weight: 200;
+  padding: 30px ;
+  font-family: var(--fonte-destaque);
+  color: white;
+}
+#info>p{
+    font-size: 18px;
+}
+#Balletbot {
+  width: 395px;
+}
+footer>img{
+    width:300px;
+    display: flex;
+    margin: auto;
+    padding: 15px;
 }
